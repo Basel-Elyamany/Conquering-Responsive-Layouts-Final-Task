@@ -2,7 +2,7 @@
 
 A responsive landing page built with **HTML and CSS**, focusing on mobile-first design and clean layout structure.
 
-LIVE URL: [HERE]()
+LIVE URL: [HERE](https://basel-elyamany.github.io/Conquering-Responsive-Layouts-Final-Task/)
 
 ---
 
