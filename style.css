@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h1, h2, h3, h5{
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+}
+p, a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+
+}
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 10px 0; */
+}
+.header--primary{
+    color: #fff;
+}
+.header--secondary{
+    color: #A59678;
+}
+
+/* -------------------------------------------------------------------------- */
+
+header{
+    background-color: #2E323F;
+    display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.intro{
+    background-color: #3B4050;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+.intro h1{
+    margin-top: 0;
+}
+.intro p{
+    color: #fff;
+    margin-bottom: 40px;
+}
+.intro a{
+    background-color: #A59678;
+    padding: 0.5em 0.8em;
+    border-radius: 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.principles{
+    text-align: center;
+    background-color: #f1f1f1;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    color: #6F737F;
+}
+.principles h3{
+    margin: 0 auto 0 auto;
+    font-size: 30px;
+    color: #A59678;
+}
+.principle{
+    padding-bottom: 15px;
+}
+.principle p{
+    text-align: justify;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.content h3{
+    color: #A59678;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.content p{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 26px;
+}
+.step{
+    background-color: #3B4050;
+    text-align: center;
+    padding: 1.3rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.step h3{
+    margin-top: 0;
+    font-size: 24px;
+}
+.step p{
+    text-align: justify;
+    line-height: 26px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+footer{
+    background-color: #3B4050;
+    padding-top: 25px;
+    color: #6F737F;
+    padding-bottom: 20px;
+}
+.footer__title{
+    font-size: 24px
+}
+footer h5{
+    color: #A59678;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.footer__info__col a + a{
+    display: block;
+    margin-top: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 600px){
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .col{
+        width: 100%;
+    }
+    header{
+    display: block;
+    padding: 15px 0 15px 0;
+    }
+    header div{
+        align-items: center;
+    }
+    nav a{
+        font-size: min(2vw , 20px);
+    }
+    nav a + a{
+        margin-left: 10px;
+    }
+    .btn{
+            background-color: #A59678;
+    padding: 0.5em 0.8em;
+    border-radius: 15px;
+    }
+
+/* -------------------------------------------------------------------------- */
+    .intro{
+    padding-bottom: 20px;
+    }
+    .intro h1{
+        width: 80%;
+        font-size: min(5vw , 60px);
+    }
+    .intro div{
+        align-items: center;
+        gap: min(5vw,50px);
+    }
+    .intro__text{
+        width: 100%;
+        text-align: left;
+        flex-grow: 0;
+        font-size: clamp(12px,2vw,18px);
+        margin-bottom: 20px;
+    }
+
+/* -------------------------------------------------------------------------- */
+
+    .principles .container{
+        gap: 30px;
+    }
+
+/* -------------------------------------------------------------------------- */
+
+    .steps{
+        gap: 15px;
+    }
+    .step{
+        padding: 15px;
+    }
+    .step > h3{
+        font-size: 20px;
+    }  
+    .step > p{
+        font-size: 12px;
+    }
+
+/* -------------------------------------------------------------------------- */
+
+    .footer__title{
+        text-align: center;
+        font-size: 40px;
+    }
+    .footer__title >h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer__info{
+        gap: 20px;
+    }
+    .footer__info__col{
+        flex-grow: 0;
+    }
+    .footer__info div:first-child{
+        width: 40%;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 1000px){
+    .middle-section{
+        padding: 150px 0 150px 0;
+    }
+    .middle-section > div{
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+    .content{
+        width: 60%;
+    }
+    .content h3{
+        margin-top: 0;
+    }
+    .steps{
+        flex-direction: column;
+        width: 30%;
+        justify-content: start;
+        padding-top: 15px;
+    }
+    .step{
+        margin-bottom: 0;
+    }
+}
